@@ -1,12 +1,16 @@
-function navigation(){
-    return(
-        <div>
-            <ul style={{display:"flex",justifyContent:'center',gap:'20px'}}>
-                <li> <a href="#">accceuil</a></li>
-                <li><a href="#">profil</a> </li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </div>
-    )
+import "./navigation.css";
+
+function navigation() {
+  return (
+    <nav className="site-navigation" aria-label="Main navigation">
+      <a className="navigation-brand" href="#home">Student Profile</a>
+      <ul className="navigation-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  );
 }
+
 export default navigation;

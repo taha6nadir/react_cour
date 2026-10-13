@@ -1,0 +1,15 @@
+.identity-card {
+  padding: 28px;
+  text-align: center;
+}
+
+.identity-card p {
+  margin: 14px 0;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+.identity-card p:first-of-type {
+  padding-top: 18px;
+  border-top: 1px solid #e9e9e9;
+}

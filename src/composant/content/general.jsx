@@ -1,37 +1,19 @@
+import "./general.css";
+
 function generale() {
   return (
-    <div>
-      <ul>
-        <h1>generale information</h1>
-      </ul>
-      <table border={"1"}>
-        <tr>
-            <td>roll</td>
-            <td>:</td>
-            <td>125</td>
-        </tr>
-        <tr>
-            <td>academie year</td>
-            <td>:</td>
-            <td>2021</td>
-        </tr>
-        <tr>
-            <td>religion</td>
-            <td>:</td>
-            <td>group</td>
-        </tr>
-        <tr>
-            <td>gender</td>
-            <td>:</td>
-            <td>male</td>
-        </tr>
-        <tr>
-            <td>blood</td>
-            <td>:</td>
-            <td>o+</td>
-        </tr>
+    <section className="card information-card">
+      <h2 className="section-heading">General Information</h2>
+      <table className="information-table">
+        <tbody>
+          <tr><th scope="row">Roll</th><td>:</td><td>125</td></tr>
+          <tr><th scope="row">Academic Year</th><td>:</td><td>2020</td></tr>
+          <tr><th scope="row">Gender</th><td>:</td><td>Male</td></tr>
+          <tr><th scope="row">Religion</th><td>:</td><td>Group</td></tr>
+          <tr><th scope="row">Blood</th><td>:</td><td>B+</td></tr>
+        </tbody>
       </table>
-    </div>
+    </section>
   );
 }
 export default generale;

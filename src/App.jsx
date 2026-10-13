@@ -1,12 +1,18 @@
 import Profil from "./composant/content/profil.jsx";
 import Navigation from "./composant/navigation/navigation.jsx";
-import Footer from "./composant/footer/footer.jsx"
+import Footer from "./composant/footer/footer.jsx";
+
 function App() {
   return (
-    <div>
-      <h1 style={{margin:'0% 50%'}}>profile student</h1>
+    <div className="app-shell" id="home">
       <Navigation />
-      <Profil />
+      <main className="page-content">
+        <header className="page-heading">
+          <h1>Student Profile Page</h1>
+          <p>A responsive student profile page design.</p>
+        </header>
+        <Profil />
+      </main>
       <Footer />
     </div>
   );
