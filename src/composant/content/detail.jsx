@@ -1,15 +1,18 @@
 import Header from "../header/header.jsx";
 import "./detail.css";
 
-function detail() {
-  const student = { id: 2132214, class: 5, section: "abcd" };
-
+function detail(props) {
   return (
     <div className="card identity-card">
       <Header />
-      <p>studentid:{student.id}</p>
-      <p>class:{student.class}</p>
-      <p>section:{student.section}</p>
+      <p>studentid:{props.id}</p>
+      <p>class:{props.class}</p>
+      <p>section:{props.section}</p>
+      <ul>
+        {props.students.map((Stg, index) => (
+          <li key={index}>{Stg}</li>
+        ))}
+      </ul>
     </div>
   );
 }
