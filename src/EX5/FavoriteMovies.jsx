@@ -44,7 +44,7 @@ function FavoriteMovies() {
         <ul>
           {movies.map((movie) => (
             <li key={movie.id}>
-              {movie.name}{" "}
+              {movie.name}
               <button type="button" onClick={() => supprimerFilm(movie.id)}>
                 Supprimer
               </button>
