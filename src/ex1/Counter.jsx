@@ -2,6 +2,8 @@ import { useState } from "react";
 import Valeur from "./Valeur";
 import PasIncr from "./pasincrimenter";
 import PasDincr from "./pasdesincrimenter";
+import "./Counter.css";
+
 function Counter() {
     const [cnt, setcnt] = useState(0);
     const [pasIncrementation, setPasIncrementation] = useState(2);
@@ -20,14 +22,16 @@ function Counter() {
     }
 
     return (
-        <div>
+        <main className="counter-page">
             <Valeur counter={cnt} />
-            <button type="button" onClick={decr}>Décrémenter</button>
-            <button type="button" onClick={incr}>Incrémenter</button>
-            <button type="button" onClick={initial}>Initialiser</button>
+            <div className="counter-actions">
+                <button type="button" onClick={incr}>Incrémenter</button>
+                <button type="button" onClick={decr}>Décrémenter</button>
+                <button type="button" onClick={initial}>Initialiser</button>
+            </div>
             <PasIncr setPasIncrementation={setPasIncrementation} />
             <PasDincr setPasDecrementation={setPasDecrementation} />
-        </div>
+        </main>
     );
 }
 

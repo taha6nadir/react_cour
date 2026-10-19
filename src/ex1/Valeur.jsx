@@ -1,5 +1,5 @@
 function Valeur(props) {
-	return <div>{props.counter}</div>;
+	return <div className="counter-value">{props.counter}</div>;
 }
 
 export default Valeur
