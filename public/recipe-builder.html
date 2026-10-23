@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative Recipe Builder</title>
+    <link rel="stylesheet" href="/recipe-builder.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="toolbar">
+        <a class="brand" href="/recipe-builder.html">
+          <span class="brand-icon" aria-hidden="true">🍽️</span>
+          <span>Creative Recipe Builder</span>
+        </a>
+        <div class="toolbar-controls">
+          <input type="search" placeholder="Rechercher..." aria-label="Rechercher une recette">
+          <select aria-label="Filtrer par catégorie">
+            <option>Toutes catégories</option>
+            <option>Plat</option>
+            <option>Boisson</option>
+          </select>
+          <button class="create-button" type="button">+ Créer une nouvelle recette</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="recipes" aria-label="Recettes">
+          <div class="recipe-grid">
+            <article class="recipe-card">
+              <div class="recipe-image">
+                <img src="/img/tacos.png" alt="Tacos méditerranéens">
+              </div>
+              <div class="recipe-content">
+                <div class="recipe-heading">
+                  <h2>Tacos méditerranéens</h2>
+                  <span class="category">Plat</span>
+                </div>
+                <p class="description">Tacos légers et parfumés.</p>
+                <ul class="ingredients">
+                  <li>Tortilla</li>
+                  <li>Poulet</li>
+                  <li>Tomate</li>
+                  <li>Feta</li>
+                </ul>
+                <p class="difficulty"><strong>Difficulté:</strong> 🔥 🔥 🔥 🔥</p>
+                <p class="created">Créée: 11/19/2025, 12:47:37 PM</p>
+                <div class="actions">
+                  <button type="button">Modifier</button>
+                  <button class="duplicate" type="button">Dupliquer</button>
+                  <button class="delete" type="button">Supprimer</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="recipe-card">
+              <div class="recipe-image smoothie-image">
+                <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=85" alt="Smoothie à la mangue">
+              </div>
+              <div class="recipe-content">
+                <div class="recipe-heading">
+                  <h2>Smoothie mangue</h2>
+                  <span class="category">Boisson</span>
+                </div>
+                <p class="description">Boisson fraîche et fruitée.</p>
+                <ul class="ingredients">
+                  <li>Mangue</li>
+                  <li>Lait d'amande</li>
+                  <li>Miel</li>
+                </ul>
+                <p class="difficulty"><strong>Difficulté:</strong> 🔥</p>
+                <p class="created">Créée: 11/19/2025, 12:47:37 PM</p>
+                <div class="actions">
+                  <button type="button">Modifier</button>
+                  <button class="duplicate" type="button">Dupliquer</button>
+                  <button class="delete" type="button">Supprimer</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <nav class="pagination" aria-label="Pagination">
+            <button class="current" type="button" aria-current="page">1</button>
+            <button type="button">2</button>
+          </nav>
+        </section>
+
+        <aside class="quick-help">
+          <div class="help-heading">
+            <h2>Aide rapide</h2>
+            <span>v1.0</span>
+          </div>
+          <p>• Cliquez sur <strong>+ Créer une nouvelle recette</strong> pour ouvrir le formulaire.</p>
+          <p>• Pagination numérotée en bas de la liste</p>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>

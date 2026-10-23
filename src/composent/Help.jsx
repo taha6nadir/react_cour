@@ -1,4 +1,4 @@
-import "./Help.css";
+
 function Help() {
   return (
     <aside className="quick-help">

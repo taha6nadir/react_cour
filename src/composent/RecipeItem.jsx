@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./RecipeItem.css";
 function RecipeItem() {
   const [recettes,setrecettes] = useState([
     {
