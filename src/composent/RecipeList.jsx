@@ -1,7 +1,7 @@
 import RecipeItem from "./RecipeItem";
 function RecipeList(){
     return(
-        <div>
+        <div className="recipe-list">
             <RecipeItem />
         </div>
     )
